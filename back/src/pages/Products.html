@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Store</title>
+    <link rel="stylesheet" href="../styles/styleProducts.css">
+    <script src="../script/scriptProducts.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Suite Store</h1>
+        <nav class="menu-nav">
+            <ul class="itens-nav">
+                <a href="../pages/Home.html">
+                    <li>Home</li>
+                </a>
+                <a href="../pages/Products.html">
+                    <li>Products</li>
+                </a>
+                <a href="../pages/Categories.html">
+                    <li>Categories</li>
+                </a>
+                <a href="../pages/History.html">
+                    <li>History</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="menu-add-product">
+            <form id="form">
+                <input type="text" id="productName" name="productName" placeholder="Product Name" required>
+                <span>
+                    <input type="number" id="amountProduct" step="0" min="1" name="amountProduct" placeholder="Amount"
+                        required pattern="[0-9]+$">
+                    <input type="number" id="unitPrice" step="0.01" min="0.01" name="unitPrice" placeholder="Unit price"
+                        required>
+                    <select id="selectCategory" name="Categoria" required>
+                        <option value="">Select Category</option>
+                    </select>
+                </span>
+                <button class="button-add-product" id="addProduct" type="submit">Add Product</button>
+            </form>
+        </article>
+
+
+        <article>
+            <table class="table_products">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Unit price</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tableAddProducts">
+
+                </tbody>
+            </table>
+        </article>
+    </main>
+
+</body>
+
+</html>

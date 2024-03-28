@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Store</title>
+    <link rel="stylesheet" href="../styles/styleHistory.css">
+    <script src="../script/scriptHistory.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Suite Store</h1>
+        <nav class="menu-nav">
+            <ul class="itens-nav">
+                <a href="../pages/Home.html">
+                    <li>Home</li>
+                </a>
+                <a href="../pages/Products.html">
+                    <li>Products</li>
+                </a>
+                <a href="../pages/Categories.html">
+                    <li>Categories</li>
+                </a>
+                <a href="../pages/History.html">
+                    <li>History</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="menu-history">
+            <table class="table-history">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Tax</th>
+                        <th>Total</th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </article>
+        <article class="history-buys">
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close" onclick="closeModal()">X</a>
+                    <h2>Informations</h2>
+                    <table class="table-modal">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Amount</th>
+                                <th>Tax</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </article>
+    </main>
+</body>
+
+</html>

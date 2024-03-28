@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Store</title>
+    <link rel="stylesheet" href="../styles/styleCategories.css">
+    <script src="../script/scriptCategories.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Suite Store</h1>
+        <nav class="menu-nav">
+            <ul class="itens-nav">
+                <a href="../pages/Home.html">
+                    <li>Home</li>
+                </a>
+                <a href="../pages/Products.html">
+                    <li>Products</li>
+                </a>
+                <a href="../pages/Categories.html">
+                    <li>Categories</li>
+                </a>
+                <a href="../pages/History.html">
+                    <li>History</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="menu-add-category">
+            <form id="form">
+                <span>
+                    <input type="text" name="categoryName" id="categoryName" placeholder="Category name" required>
+                    <input type="number" step="0.01" min="0.01" name="taxCategory" id="taxCategory" placeholder="Tax"
+                        required>
+                </span>
+                <button class="button-add-category" id="addCategory" type="submit">Add Category</button>
+            </form>
+
+        </article>
+
+        <article>
+            <table class="table_category">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Category</th>
+                        <th>Tax</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody class="tableAddCategory">
+                </tbody>
+            </table>
+        </article>
+    </main>
+</body>
+
+</html>

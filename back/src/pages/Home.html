@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Store</title>
+    <link rel="stylesheet" href="../styles/styleHome.css">
+    <script src="../script/scriptHome.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Suite Store</h1>
+        <nav class="menu-nav">
+            <ul class="itens-nav">
+                <a href="../pages/Home.html">
+                    <li>Home</li>
+                </a>
+                <a href="../pages/Products.html">
+                    <li>Products</li>
+                </a>
+                <a href="../pages/Categories.html">
+                    <li>Categories</li>
+                </a>
+                <a href="../pages/History.html">
+                    <li>History</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="menu-product">
+            <form id="form" action="updateProductCar.php">
+                <select name="Products" class="options" id="selectProduct" onchange="productSelect(this.value)"
+                    required>
+                    <option value="">Selecione o Produto</option>
+                </select>
+                <span>
+                    <input type="number" name="amountProduct" id="amountProduct" step="0" min="1" class="options"
+                        placeholder="Amount" required>
+                    <input type="text" id="taxProduct" name="taxProduct" class="options" placeholder=" Tax" readOnly
+                        required>
+                    <input type="text" id="priceProduct" name="priceProduct" class="options" placeholder=" Price"
+                        readOnly required>
+                </span>
+                <button class="button-add" type="submit">AddProduct</button>
+            </form>
+        </article>
+
+
+        <article class="menu-buy">
+            <section class="divTable">
+                <table class="table_products">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+            <form id="formBuy" class="buttons-bottom">
+                <section class="buttonsDiv">
+                    <div class="buttonTax">
+                        <p class="tax"></p>
+                    </div>
+                    <div class="buttonTotal">
+                        <p class="total"></p>
+                    </div>
+                </section>
+                <button id="buttonCancel" class="buttonCancel" >Cancel</button>
+                <button id="buttonFinish" class="buttonFinish">Finish</button>
+            </form>
+        </article>
+    </main>
+    
+</body>
+
+</html>

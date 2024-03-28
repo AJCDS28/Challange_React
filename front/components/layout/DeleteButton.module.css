@@ -1,0 +1,8 @@
+.size{
+    font-weight: 600;
+    color:rgb(253, 1, 1)
+}
+
+.size:hover{
+    font-weight: 700;
+}

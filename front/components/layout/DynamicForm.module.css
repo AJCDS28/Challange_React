@@ -1,0 +1,17 @@
+.button_add_product {
+    height: 35px;
+    border-radius: 5px;
+}
+
+.button_add_product {
+    width: 100%;
+    background-color: rgb(135, 101, 215);
+    border: 1px solid grey !important;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.button_add_product:hover {
+    color: white;
+    cursor: pointer;
+}
