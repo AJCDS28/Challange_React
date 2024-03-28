@@ -4,8 +4,6 @@ import DynamicTable from '../components/layout/DynamicTable'
 import { useState, useEffect } from 'react'
 import DeleteButton from '../components/layout/DeleteButton'
 
-
-
 function Home() {
     const [productsCar, setProductsCar] = useState([])
     const [products, setProducts] = useState([])
@@ -190,7 +188,6 @@ function Home() {
                 })
                 const datas = await data.json();
                 if (data.ok) {
-
                     for (let index = 0; index < arrayProductsCar.length; index++) {
                         await deleteProductCar(arrayProductsCar[index].code);
                     }
@@ -222,7 +219,8 @@ function Home() {
                         body: formData
                     });
                     const data = await response.json();
-                    if (!response.ok) {
+                    console.log(data);
+                    if (!data) {
                         console.error('Erro ao atualizar o estoque do produto.');
                     }
                     return true;
@@ -304,9 +302,7 @@ function Home() {
                 </article>
             </main>
         </>
-
     )
-
 }
 
 export default Home;

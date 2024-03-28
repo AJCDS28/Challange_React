@@ -1,8 +1,6 @@
-import styles from './Table.module.css'
 import React from 'react';
 
 const DynamicTable = ({ columns, data }) => {
-  
 
   const Row = ({ record, index }) => {
     const values = Object.values(record);
@@ -21,7 +19,6 @@ const DynamicTable = ({ columns, data }) => {
           {columns.map((column) => (
             <th key={column.id}>{column.name}</th>
           ))
-          
           }
           
         </tr>

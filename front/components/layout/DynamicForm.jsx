@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../layout/DynamicForm.module.css'
 
-const DynamicForm = ({ fields, onSubmit,action, options, onSucess,productsCar, onChange }) => {
+const DynamicForm = ({ fields, onSubmit,action, options}) => {
     const [formData, setFormData] = useState({});
 
     const handleChange = (e, name) => {

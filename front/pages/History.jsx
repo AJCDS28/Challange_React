@@ -78,7 +78,7 @@ const History = () => {
     return (
         <>
             <main className={styles.main}>
-            <Modal 
+            <Modal
                     modal={modal}
                     setModal={setModal}
                     selectedOrderDetails={dataDetails}

@@ -15,7 +15,7 @@ $products = new Products($myPDO);
 
 switch ($action) {
     case 'insertProducts':
-        $name = $_POST['productName'];
+        $name = htmlspecialchars($_POST['productName']);
         $amount = $_POST['amountProduct'];
         $unitPrice = $_POST['unitPrice'];
         $category = $_POST['Categoria'];

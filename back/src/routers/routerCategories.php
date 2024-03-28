@@ -15,7 +15,7 @@ $categories = new Categories($myPDO);
 
 switch ($action) {
     case 'addCategory':
-        $name = $_POST['categoryName'];
+        $name = htmlspecialchars($_POST['categoryName']);
         $tax = $_POST['taxCategory'];
         $categories->addCategory($name, $tax);
         break;
